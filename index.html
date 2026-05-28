@@ -32,6 +32,7 @@
       background:#0b0b0be6;
       backdrop-filter:blur(10px);
       border-bottom:1px solid #1e1e1e;
+      gap:12px;
     }
 
     .title{
@@ -40,17 +41,14 @@
       color:#00ff88;
       letter-spacing:1px;
       text-transform:uppercase;
+      white-space:nowrap;
     }
 
-    .search{
-      width:44px;
-      height:44px;
-      border-radius:14px;
-      background:#181818;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-size:18px;
+    .welcome{
+      font-size:24px;
+      font-weight:700;
+      color:white;
+      white-space:nowrap;
     }
 
     .container{
@@ -139,7 +137,11 @@
       }
 
       .title{
-        font-size:18px;
+        font-size:15px;
+      }
+
+      .welcome{
+        font-size:15px;
       }
 
       .episode-title{
@@ -186,6 +188,11 @@
         font-size:30px;
       }
 
+      .title,
+      .welcome{
+        font-size:20px;
+      }
+
     }
 
     /* Large screens */
@@ -202,8 +209,15 @@
 <body>
 
   <div class="topbar">
-    <div class="title">A SPLENDID MATCH</div>
-    <div class="search">🔍</div>
+
+    <div class="title">
+      A SPLENDID MATCH
+    </div>
+
+    <div class="welcome">
+      Welcome CEO :)
+    </div>
+
   </div>
 
   <div class="container">
