@@ -6,7 +6,6 @@
   <title>The First Jasmine / Mo Li</title>
 
   <style>
-
     *{
       margin:0;
       padding:0;
@@ -28,25 +27,21 @@
       align-items:center;
       position:sticky;
       top:0;
-      z-index:100;
       background:#0b0b0be6;
       backdrop-filter:blur(10px);
       border-bottom:1px solid #1e1e1e;
-      gap:12px;
     }
 
     .title{
-      font-size:20px;
+      font-size:18px;
       font-weight:700;
       color:#00ff88;
-      white-space:nowrap;
     }
 
     .welcome{
-      font-size:20px;
+      font-size:18px;
       font-weight:700;
       color:white;
-      white-space:nowrap;
     }
 
     .container{
@@ -61,7 +56,6 @@
       border-radius:22px;
       overflow:hidden;
       background:black;
-      box-shadow:0 12px 35px rgba(0,0,0,0.45);
       aspect-ratio:16/9;
     }
 
@@ -83,10 +77,6 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-    }
-
-    .episode-header h3{
-      font-size:22px;
     }
 
     .episode-count{
@@ -125,12 +115,7 @@
       .episode-list{
         grid-template-columns:repeat(3,1fr);
       }
-
-      .episode-title{
-        font-size:22px;
-      }
     }
-
   </style>
 </head>
 <body>
@@ -143,11 +128,9 @@
   <div class="container">
 
     <div class="video-box">
-      <iframe
-        id="player"
-        src="https://krakenfiles.com/embed-video/LipUAwmfFM"
-        allowfullscreen>
-      </iframe>
+      <iframe id="player"
+      src="https://krakenfiles.com/embed-video/LipUAwmfFM"
+      allowfullscreen></iframe>
     </div>
 
     <div class="episode-title" id="episodeTitle">
@@ -156,40 +139,19 @@
 
     <div class="episode-header">
       <h3>Episodes</h3>
-      <div class="episode-count">6 - 11</div>
+      <div class="episode-count">6 - 13</div>
     </div>
 
     <div class="episode-list">
 
-      <button class="episode-btn active"
-      onclick="setEpisode(6,'https://krakenfiles.com/embed-video/LipUAwmfFM',this)">
-      EP 6
-      </button>
-
-      <button class="episode-btn"
-      onclick="setEpisode(7,'https://krakenfiles.com/embed-video/v8O5AGUUBn',this)">
-      EP 7
-      </button>
-
-      <button class="episode-btn"
-      onclick="setEpisode(8,'https://krakenfiles.com/embed-video/W6vQ2ekCFs',this)">
-      EP 8
-      </button>
-
-      <button class="episode-btn"
-      onclick="setEpisode(9,'https://krakenfiles.com/embed-video/W4rUVjFxMD',this)">
-      EP 9
-      </button>
-
-      <button class="episode-btn"
-      onclick="setEpisode(10,'https://krakenfiles.com/embed-video/JfjNJy3oY9',this)">
-      EP 10
-      </button>
-
-      <button class="episode-btn"
-      onclick="setEpisode(11,'https://krakenfiles.com/embed-video/AjDw23S6zW',this)">
-      EP 11
-      </button>
+      <button class="episode-btn active" onclick="setEpisode(6,'https://krakenfiles.com/embed-video/LipUAwmfFM',this)">EP 6</button>
+      <button class="episode-btn" onclick="setEpisode(7,'https://krakenfiles.com/embed-video/v8O5AGUUBn',this)">EP 7</button>
+      <button class="episode-btn" onclick="setEpisode(8,'https://krakenfiles.com/embed-video/W6vQ2ekCFs',this)">EP 8</button>
+      <button class="episode-btn" onclick="setEpisode(9,'https://krakenfiles.com/embed-video/W4rUVjFxMD',this)">EP 9</button>
+      <button class="episode-btn" onclick="setEpisode(10,'https://krakenfiles.com/embed-video/JfjNJy3oY9',this)">EP 10</button>
+      <button class="episode-btn" onclick="setEpisode(11,'https://krakenfiles.com/embed-video/AjDw23S6zW',this)">EP 11</button>
+      <button class="episode-btn" onclick="setEpisode(12,'https://krakenfiles.com/embed-video/rYBPEGmMtv',this)">EP 12</button>
+      <button class="episode-btn" onclick="setEpisode(13,'https://krakenfiles.com/embed-video/cOtk7T27Ue',this)">EP 13</button>
 
     </div>
 
